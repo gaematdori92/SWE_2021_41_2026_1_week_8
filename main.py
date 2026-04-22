@@ -1,6 +1,5 @@
 from typing import List
 
-
 def even_list(int_list: List[int]) -> List[int]:
     """
     Determines if a number is even and return an even list.
@@ -21,8 +20,7 @@ def sum_of_squares_of_even(even_int_list: List[int]) -> int:
     Returns:
         The sum of the squares of all even numbers in the list.
     """
-
-    pass
+    return sum(num ** 2 for num in even_int_list)
 
 
 def main():
@@ -31,7 +29,6 @@ def main():
     even_int_list = even_list(int_list)
     output = sum_of_squares_of_even(even_int_list)
     print(output)
-
 
 if __name__ == "__main__":
     main()
